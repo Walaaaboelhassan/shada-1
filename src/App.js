@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { createContext, useState } from "react";
+import Header from "./Components/Header/Header";
+import Footer from "./Components/Footer/Footer.jsx";
+import ArabicAbout from "./Components/Sections/About/ArabicAbout";
+import { BrowserRouter } from "react-router-dom";
+import Sections from "./Components/Sections/Sections.jsx";
+
+export const LanguageContext = createContext(null)
+export const setLanguageContext = createContext(null)
 
 function App() {
+  const [language, setLanguage] = useState('english')
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <LanguageContext.Provider value={language}>
+      <setLanguageContext.Provider value={setLanguage}>
+        <BrowserRouter>
+          <Header />
+          <Sections />
+          <Footer />
+        </BrowserRouter>
+      </setLanguageContext.Provider>
+    </LanguageContext.Provider>
   );
 }
 
