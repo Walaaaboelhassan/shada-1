@@ -9,7 +9,7 @@ export const LanguageContext = createContext(null)
 export const setLanguageContext = createContext(null)
 
 function App() {
-  const [language, setLanguage] = useState('english')
+  const [language, setLanguage] = useState('arabic')
   return (
     <LanguageContext.Provider value={language}>
       <setLanguageContext.Provider value={setLanguage}>

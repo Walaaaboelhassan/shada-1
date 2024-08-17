@@ -1,14 +1,24 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./TopSection.css";
 import { RiFacebookCircleLine } from "react-icons/ri";
 import { RiInstagramLine } from "react-icons/ri";
 import { RiTwitterXFill } from "react-icons/ri";
 import { RiLinkedinFill } from "react-icons/ri";
 import { motion } from "framer-motion";
+import { LanguageContext, setLanguageContext } from "../../App";
 
 function EnglishTopSection({ title, content }) {
+  const setLanguage = useContext(setLanguageContext);
+
   return (
     <div className="top-section overflow-hidden">
+      <select
+        onChange={(e) => setLanguage(e.target.value)}
+        className="language absolute right-0 p-2 outline-none z-[999999] bg-[#a04028] text-[white]"
+      >
+        <option value="english">English</option>
+        <option value="arabic">Arabic</option>
+      </select>
       <div className="above ">
         <div className="info">
           <h1 className="title">{title} </h1>
