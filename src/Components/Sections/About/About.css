@@ -30,10 +30,6 @@
     padding: 20px;
 }
 
-.about .members:nth-of-type(odd) {
-    background-color: #0000001a;
-}
-
 .about .members .all-members .member p {
     margin-right: 31px;
     font-size: 29px;

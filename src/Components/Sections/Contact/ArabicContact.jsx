@@ -7,7 +7,6 @@ import SmallTitle from "../../SmallTitle/SmallTitle";
 function ArabicJoin() {
   return (
     <div className="">
-
       <div className="contact-us ">
         <div className="info">
           <SmallTitle title="تواصل معنا​" />

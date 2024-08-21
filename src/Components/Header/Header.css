@@ -27,7 +27,6 @@
 .header .list {}
 
 .header .list li {
-    cursor: pointer;
     border: 3px solid transparent;
     padding: 5px 10px;
     position: relative;
@@ -38,58 +37,51 @@
     font-family: system-ui;
     font-size: 13px;
     transition: .3s;
+    cursor: pointer;
     font-weight: bold;
 }
 
-.header .list li:hover a {
-    color: #9E9E9E;
-
+.header .list li:hover>a {
+    opacity: 0.8;
 }
 
-/* .header .list li .nested-list {
+.header .list .nested-list {
     position: absolute;
-    background: var(--background-header-color);
-    width: 200px;
-    border-radius: 20px 5px 20px 5px;
-    padding: 10px;
-    left: -35px;
+    width: 160px;
     top: 60px;
+    background: white;
+    left: -35px;
     overflow: hidden;
     height: 0;
     transition: .3s;
-    max-width: max-content;
-    min-width: min-content;
+    border-radius: 6px;
+    box-shadow: 0 0 11px #cccccc91;
 }
 
 .header .list li:hover .nested-list {
-    height: 174px; 
-height: max-content;
-top: 50px;
-}
-
-*/
-/* .header .list li:hover .nested-list li .nested-nested-list {
-    left: -35px;
-    top: 60px;
-    overflow: hidden;
-    height: 0;
-}
-
-.header .list li:hover .nested-list li:hover .nested-nested-list {
     height: max-content;
+    top: 36px;
 }
 
-.header .list li .nested-list li:hover {
-    animation: animate 1s ease-in 1;
+.header .list .nested-list .links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.header .list li .nested-list li .nested-nested-list li:hover {
-    animation: animate 1s ease-in 1;
+.header .list li .nested-list .links a {
+    color: black;
+    transition: .3s;
+    width: 100%;
+    text-align: end;
+    padding: 10px;
 }
 
-.header .list .nested-list li:hover {} */
-
-.header .list li .nested-list li a {}
+.header .list li .nested-list .links a:hover {
+    color: var(--main-color);
+    transform: scale(.9);
+    background: #a9a9a924;
+}
 
 .header .donate {
     background-color: yellowgreen;

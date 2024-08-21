@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import "./JoinUs.css";
+import "./Contact.css";
 import { LanguageContext } from "../../../App";
-import ArabicJoin from "./ArabicJoin";
-import EnglishJoin from "./EnglishJoin";
+import ArabicJoin from "./ArabicContact";
+import EnglishJoin from "./EnglishContact";
 
 function JoinUs() {
   const language = useContext(LanguageContext);

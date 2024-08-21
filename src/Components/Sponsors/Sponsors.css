@@ -81,6 +81,7 @@
         width: calc(100% / 1 - 100px);
     }
 }
+
 /***********************************Membership Tiers********************************************/
 .services .membership-tiers {
     margin: 0 30px 80px 30px;
@@ -88,7 +89,7 @@
 
 .services .membership-tiers .membership {
     width: 300px;
-    background-color: white;
+    background-color: #ffffffde;
     border-radius: 15px;
     display: flex;
     flex-direction: column;

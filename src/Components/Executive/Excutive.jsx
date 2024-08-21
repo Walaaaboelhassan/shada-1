@@ -1,5 +1,6 @@
 import React from "react";
 import "./Executive.css";
+import "../Sections/About/About.css";
 import SmallTitle from "../SmallTitle/SmallTitle";
 
 function Executive() {

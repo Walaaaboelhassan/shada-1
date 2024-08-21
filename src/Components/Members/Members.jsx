@@ -1,4 +1,6 @@
 import React from "react";
+import "./Members.css";
+import "../Sections/About/About.css";
 import SmallTitle from "../SmallTitle/SmallTitle";
 
 function Members() {
