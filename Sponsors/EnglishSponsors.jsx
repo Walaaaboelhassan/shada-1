@@ -1,9 +1,9 @@
 import React from "react";
 import "./Sponsors.css";
-import TopSection from "../../TopSection/TopSection";
+import TopSection from "../src/Components/TopSection/TopSection";
 import { GoSponsorTiers } from "react-icons/go";
-import SmallTitle from "../../SmallTitle/SmallTitle";
-import Groups from "../../Groups/Groups";
+import SmallTitle from "../src/Components/SmallTitle/SmallTitle";
+import Groups from "../src/Components/Groups/Groups";
 import FD from "../../../images/فضي.png";
 import gold from "../../../images/ذهبي.png";
 import platinium from "../../../images/بلاتينيوم.png";

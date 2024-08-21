@@ -36,7 +36,7 @@
 .header .list li a {
     color: white;
     font-family: system-ui;
-    font-size: 19px;
+    font-size: 13px;
     transition: .3s;
     font-weight: bold;
 }

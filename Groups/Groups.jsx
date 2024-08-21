@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import "./Groups.css";
-import { LanguageContext } from "../../App";
+import { LanguageContext } from "../src/App";
 import EnglishGroups from "./EnglishGroups";
 import ArabicGroups from "./ArabicGroups";
 

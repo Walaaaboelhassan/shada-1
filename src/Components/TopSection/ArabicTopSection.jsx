@@ -25,7 +25,7 @@ function ArabicTopSection({ title, content }) {
         </div>
         <div className="social-media-icon">
           <motion.div
-            initial={{ left: "-140px" }}
+            initial={{ left: "-138px" }}
             whileHover={{ left: "0" }}
             transition={{ duration: 0.3 }}
             className="facebook icon-cover gap-3 bg-[#3b5998]"
@@ -36,7 +36,7 @@ function ArabicTopSection({ title, content }) {
             </a>
           </motion.div>
           <motion.div
-            initial={{ left: "-140px" }}
+            initial={{ left: "-138px" }}
             whileHover={{ left: "0" }}
             transition={{ duration: 0.3 }}
             className="instagram icon-cover gap-3 bg-[#125688]"
@@ -47,7 +47,7 @@ function ArabicTopSection({ title, content }) {
             </a>
           </motion.div>
           <motion.div
-            initial={{ left: "-140px" }}
+            initial={{ left: "-138px" }}
             whileHover={{ left: "0" }}
             transition={{ duration: 0.3 }}
             className="X icon-cover gap-3 bg-[#55acee]"
@@ -58,7 +58,7 @@ function ArabicTopSection({ title, content }) {
             </a>
           </motion.div>
           <motion.div
-            initial={{ left: "-140px" }}
+            initial={{ left: "-138px" }}
             whileHover={{ left: "0" }}
             transition={{ duration: 0.3 }}
             className="linkedin icon-cover gap-3 bg-[blue]"

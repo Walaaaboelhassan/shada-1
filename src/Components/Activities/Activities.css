@@ -1,5 +1,4 @@
-.activities {
-}
+.activities {}
 
 .activities .all-activities {
     display: grid;
@@ -23,7 +22,7 @@
 .activities .all-activities .activity p {
     color: white;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .activities .all-activities .activity .image {

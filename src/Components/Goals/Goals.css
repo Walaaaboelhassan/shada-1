@@ -3,10 +3,6 @@
 .goals .all-goals-box {
     margin-top: 60px;
     padding: 50px 0;
-    /* background: url('../../images/5881775159038296687.jpg');
-    background-repeat: no-repeat;
-    background-size: cover; */
-
 }
 
 .goals .all-goals-box .goals-box {
@@ -23,30 +19,10 @@
     background-color: #8080806b;
 }
 
-/* .goals .all-goals-box .goals-box::after,
-.goals .all-goals-box .goals-box::before {
-    content: '';
-    position: absolute;
-    width: 60px;
-    height: 59px;
-    border-radius: 50%;
-    background-color: white;
-
-}
-
-.goals .all-goals-box .goals-box::after {
-    right: -20px;
-}
-
-.goals .all-goals-box .goals-box::before {
-    left: -20px;
-    top: -20px;
-} */
-
 .goals .all-goals-box .goals-box .title {}
 
 .goals .all-goals-box .goals-box .title h1 {
-    font-size: 36px;
+    font-size: 26px;
     text-align: center;
     color: #2f2f2f;
     text-transform: capitalize;
@@ -60,7 +36,7 @@
 
 .goals .all-goals-box .goals-box .description p {
     color: #1e1e1e;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 14px;
 }
 
@@ -81,7 +57,6 @@
     }
 
     .goals .all-goals-box .goals-box .description {
-
         margin: 20px auto;
     }
 }

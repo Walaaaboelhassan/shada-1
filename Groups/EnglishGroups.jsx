@@ -3,13 +3,13 @@ import firstGroup from "../../images/first.png";
 import secondGroup from "../../images/second.png";
 import thirdGroup from "../../images/third.png";
 import fourthGroup from "../../images/fourth.png";
-import SmallTitle from "../SmallTitle/SmallTitle";
+import SmallTitle from "../src/Components/SmallTitle/SmallTitle";
 import thumpsUp from "../../images/thumps up.png";
 
-function ArabicGroups() {
+function EnglishGroups() {
   return (
     <div className="groups">
-      <SmallTitle title={"اشراك الاندية الرياضية"} />
+      <SmallTitle title={"Subscription to sports clubs"} />
       <div className="images flex items-center justify-center ">
         <img src={firstGroup} alt="group" />
         <img src={secondGroup} alt="group" />
@@ -18,29 +18,30 @@ function ArabicGroups() {
       </div>
       <div className="two-sides flex items-center justify-evenly gap-8">
         <div className="why">
-          <h1>اشراك الاندية الرياضية</h1>
+          <h1>Subscription to sports clubs</h1>
           <p>
-            لابد من اشراك الإندية الرياضية و فتح نشاطات في مواقعها و الترويج لها
-            لسهولة وصول المتدربين ، و تعزيز دور المدربين بهذا القطاع
+            Sports clubs must be involved and activities should be opened at
+            their locations and promoted For easy access for trainees, and
+            enhancing the role of trainers in this sector
           </p>
         </div>
         <ul className="continue">
           <li>
-            {" "}
             <img src={thumpsUp} alt="thump up" />
-            تعزيز العلاقة مع الجمهور
+            Strengthening the relationship with the audience
+          </li>
+          <li>
+            <img src={thumpsUp} alt="thump up" />A suitable environment for
+            developing trainers
+          </li>
+          <li>
+            <img src={thumpsUp} alt="thump up" />A training environment for
+            trainers
           </li>
           <li>
             <img src={thumpsUp} alt="thump up" />
-            بيئة مناسبه لتطوير المدربين
-          </li>
-          <li>
-            <img src={thumpsUp} alt="thump up" />
-            بيئة تأهيل للمدربين
-          </li>
-          <li>
-            <img src={thumpsUp} alt="thump up" />
-            تواصل أكبر مع المجتمع المحلي <br />( فعاليات / استثمار )
+            Greater communication with the local community <br />
+            (events/investment)
           </li>
         </ul>
       </div>
@@ -48,4 +49,4 @@ function ArabicGroups() {
   );
 }
 
-export default ArabicGroups;
+export default EnglishGroups;

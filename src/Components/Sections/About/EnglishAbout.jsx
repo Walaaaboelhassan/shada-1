@@ -11,7 +11,6 @@ import { useLocation, useNavigate } from "react-router-dom";
 import Activities from "../../Activities/Activities";
 import Goals from "../../Goals/Goals";
 import logo from "../../../images/logo.png";
-import Structure from "../../Structure/Structure";
 
 function EnglishAbout() {
   return (
@@ -39,7 +38,6 @@ function EnglishAbout() {
       </div>
       <Activities />
       <Goals />
-      <Structure />
       <div className="members">
         <SmallTitle title={"Members of the Board of Directors"} />
         <div

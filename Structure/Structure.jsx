@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import "./Structure.css";
-import { LanguageContext } from "../../App";
+import { LanguageContext } from "../src/App";
 import ArabicStructure from "./ArabicStructure";
 import EnglishStructure from "./EnglishStructure";
 

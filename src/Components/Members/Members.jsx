@@ -1,0 +1,17 @@
+import React from "react";
+import SmallTitle from "../SmallTitle/SmallTitle";
+
+function Members() {
+  return (
+    <div className="members-ass">
+      <div className="members">
+        <SmallTitle title={"أعضاء الجمعية"} />
+        <div className="not">
+          <p>قيد التطوير</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Members;

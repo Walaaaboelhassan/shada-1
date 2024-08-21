@@ -10,7 +10,6 @@ import TopSection from "../../TopSection/TopSection";
 import { useLocation, useNavigate } from "react-router-dom";
 import Activities from "../../Activities/Activities";
 import Goals from "../../Goals/Goals";
-import Structure from "../../Structure/Structure";
 
 function ArabicAbout() {
   return (
@@ -19,34 +18,18 @@ function ArabicAbout() {
         title={"جمعية شدا للرياضيات الجبلية​"}
         content="جمعية شدا للرياضات الجبلية هي منظمة رائدة مكرسة لتعزيز وتطوير الرياضات الجبلية في منطقة الباحة. تحمل اسم جبال شدا الشامخة، تهدف الجمعية إلى زيادة الوعي، وتعزيز ثقافة حيوية للرياضات الجبلية، وتفعيل الأنشطة الرياضية المختلفة التي تبرز الجمال الطبيعي والتضاريس المميزة لمنطقة الباحة"
       />
-      <div className="flex flex-col md:flex-row items-center justify-center md:gap-16 my-16">
-        <div className="image">
-          <img className="w-[250px]" src={logo} alt="logo" />
-        </div>
-        <div className="association">
-          <h1 className="text-center text-[45px] text-[#a04028]">
-            فكرة شعار الجمعية​
-          </h1>
-          <p className="w-[500px] text-[20px]">
-            جمعت الفكرة بين تصور الجبل و النقش الجنوبي المسجل في وزارة الثقافه
-            بالإضافه الى توضيح تضاريس المنطقة بالكامل مع نقش يدل على حرف ( ش )
-            وهو أول حرف من كلمة ( شدا ) ​
-          </p>
-        </div>
-      </div>
       <Activities />
       <Goals />
-      <Structure />
       <div className="members">
         <SmallTitle title={"أعضاء المجلس الإدارة"} />
-        <div className="flex mt-[70px] justify-between items-center flex-row-reverse">
+        <div className=" mt-[70px] ">
           <div className="all-members">
             <div className="member flex-row-reverse">
-              <div className="image !w-[65px] !h-full">
+              <div className="image !w-[100%] !h-[200px]">
                 <img
                   src={member4}
                   alt="member"
-                  className="w-full h-full object-cover"
+                  className="w-[70%] mx-auto h-full object-cover"
                 />
               </div>
               <p>
@@ -63,11 +46,11 @@ function ArabicAbout() {
               </p>
             </div>
             <div className="member flex-row-reverse">
-              <div className="image !w-[65px] !h-full">
+              <div className="image !w-[100%] !h-[200px]">
                 <img
                   src={member3}
                   alt="member"
-                  className="w-full h-full object-cover"
+                  className="w-[70%] mx-auto h-full object-cover"
                 />
               </div>
               <p>
@@ -80,13 +63,13 @@ function ArabicAbout() {
                 <span>مالك منتجع الكهوف السياحي الريفي </span>
                 <span>عضو عدة لجان تنفيذيه في منطقة الباحه </span>
               </p>
-            </div>{" "}
+            </div>
             <div className="member flex-row-reverse">
-              <div className="image !w-[65px] !h-full">
+              <div className="image !w-[100%] !h-[200px]">
                 <img
                   src={member2}
                   alt="member"
-                  className="w-full h-full object-cover"
+                  className="w-[70%] mx-auto h-full object-cover"
                 />
               </div>
               <p>
@@ -110,13 +93,13 @@ function ArabicAbout() {
                   التنفيذي السعودي الأثيوبي{" "}
                 </span>
               </p>
-            </div>{" "}
+            </div>
             <div className="member flex-row-reverse">
-              <div className="image !w-[65px] !h-full bg-">
+              <div className="image !w-[100%] !h-[200px] bg-">
                 {/* <img
                   src={"عزة الزهراني"}
                   alt="member"
-                  className="w-full h-full object-cover"
+                  className="w-[70%] mx-auto h-full object-cover"
                 /> */}
               </div>
               <p>
@@ -142,11 +125,11 @@ function ArabicAbout() {
               </p>
             </div>
             <div className="member flex-row-reverse">
-              <div className="image !w-[65px] !h-full">
+              <div className="image !w-[100%] !h-[200px]">
                 <img
                   src={member1}
                   alt="member"
-                  className="w-full h-full object-cover"
+                  className="w-[70%] mx-auto h-full object-cover"
                 />
               </div>
               <p>
@@ -163,30 +146,10 @@ function ArabicAbout() {
               </p>
             </div>
           </div>
-          <div className="image">
-            <img src={member4} alt="" />
-          </div>
         </div>
       </div>
-      <div className="members">
-        <SmallTitle title={"الفريق التنفيذي"} />
-        <div className="not">
-          <p>قيد التطوير</p>
-        </div>
-      </div>
-      <div className="members">
-        {" "}
-        <SmallTitle title={"أعضاء الجمعية"} />
-        <div className="not">
-          <p>قيد التطوير</p>
-        </div>
-      </div>
-      <div className="members">
-        <SmallTitle title={"الهيكل الإداري للجمعية"} />
-        <div className="not">
-          <p>قيد التطوير</p>
-        </div>
-      </div>
+  
+
     </div>
   );
 }

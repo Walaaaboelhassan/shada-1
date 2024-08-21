@@ -36,7 +36,7 @@
 }
 
 .top-section .info .title {
-    font-size: 60px;
+    font-size: 35px;
     color: white;
     text-align: center;
     margin: 20px 0;
@@ -44,10 +44,11 @@
 
 .top-section .info p {
     text-align: center;
-    font-weight: bold;
+    font-weight: 400;
     opacity: .7;
     color: white;
-    width: 500px;
+    width: 465px;
+    font-size: 14px;
 }
 
 .top-section .social-media-icon {

@@ -1,5 +1,5 @@
 import React from "react";
-import SmallTitle from "../SmallTitle/SmallTitle";
+import SmallTitle from "../src/Components/SmallTitle/SmallTitle";
 
 function EnglishStructure() {
   return (
