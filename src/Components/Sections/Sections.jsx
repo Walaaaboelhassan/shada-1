@@ -19,6 +19,10 @@ import Executive from "../Executive/Excutive";
 import Members from "../Members/Members";
 import Contact from "../Sections/Contact/Contact";
 import Products from "../Products/Products";
+import Error from "../Error/Error";
+import Hiring from "../Hiring/Hiring";
+import Volunteer from "../Volunteer/Volunteer";
+import Complains from "../Complains/Complains";
 
 function Sections() {
   const location = useLocation();
@@ -26,7 +30,7 @@ function Sections() {
 
   useEffect(() => {
     if (location.pathname === "/") {
-      navigate("about");
+      navigate("about/goals");
     }
   }, []);
 
@@ -47,8 +51,11 @@ function Sections() {
           <Route path="memberships" element={<Memberships />} />
           <Route path="products" element={<Products />} />
         </Route>
-        <Route path="contact-us" element={<Contact />} />
-        <Route path="activities" element={<Activities />} />
+        <Route path="contact" element={<Contact />}>
+          <Route path="hiring" element={<Hiring />} />
+          <Route path="volunteer" element={<Volunteer />} />
+          <Route path="complains" element={<Complains />} />
+        </Route>
         <Route path="commitment" element={<Commitment />}>
           <Route path="criteria" element={<Criteria />} />
           <Route path="financial-list" element={<FinancialList />} />
@@ -56,7 +63,7 @@ function Sections() {
           <Route path="parallel-list" element={<ParallelList />} />
         </Route>
         <Route path="gallery" element={<Gallery />} />
-        <Route path="*" element={"<Error />"} />
+        <Route path="*" element={<Error />} />
       </Routes>
     </div>
   );

@@ -39,10 +39,10 @@ function ArabicFooter() {
         <div className="quick-links !w-[251px] !text-end">
           <h1 className="title">روابط سريعة</h1>
           <div className="links !w-[initial] !items-end">
-            <Link to="/About">عن الجمعية</Link>
-            <Link to="/Team">مشاريع الجمعية</Link>
-            <Link to="/Faq">الخدمات اإللكترونية</Link>
-            <Link to="/Booking">انضم لنا</Link>
+            <Link to="/add-members">أعضاء المجلس الإدارة</Link>
+            <Link to="/projects">مشاريع الجمعية</Link>
+            <Link to="/sponsors">الرعاة ​</Link>
+            <Link to="/contact/complains">الشكاوى والمقترحات</Link>
           </div>
         </div>
         <div className="service !w-[251px] !text-end">

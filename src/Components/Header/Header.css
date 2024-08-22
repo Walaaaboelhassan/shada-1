@@ -39,6 +39,16 @@
     transition: .3s;
     cursor: pointer;
     font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 5px;
+}
+
+.header .list li a svg {
+    width: 17px;
+    height: 19px;
 }
 
 .header .list li:hover>a {
@@ -60,7 +70,7 @@
 
 .header .list li:hover .nested-list {
     height: max-content;
-    top: 36px;
+    top: 32px;
 }
 
 .header .list .nested-list .links {
@@ -77,7 +87,8 @@
     padding: 10px;
 }
 
-.header .list li .nested-list .links a:hover {
+.header .list li .nested-list .links a:hover,
+.header .list li .nested-list .links a.active {
     color: var(--main-color);
     transform: scale(.9);
     background: #a9a9a924;
@@ -156,9 +167,10 @@
     }
 
     .side-bar-header {
-        position: absolute;
+        position: relative;
+        top: 0;
         width: 100%;
-        transition: .3s;
+        /* transition: .3s; */
         display: block;
         z-index: -3;
     }
@@ -167,7 +179,7 @@
         flex-direction: column;
         text-align: end;
         background-color: var(--main-color);
-        padding: 10px 52px;
+        padding: 30px 52px;
         border-radius: 0;
         gap: 13px;
     }
@@ -175,11 +187,36 @@
     .header .list li a {
         font-size: 16px;
     }
+
+    .header .list .nested-list {
+        position: relative !important;
+        width: 100% !important;
+        right: 0px !important;
+        left: auto !important;
+        background: transparent !important;
+    }
+
+    .header .list li:hover .nested-list {
+        height: 0;
+    }
+
+
+    .header .list li.active .nested-list {
+        margin-bottom: 26px !important;
+        height: max-content;
+        top: 32px;
+    }
+
+    .header .list li .nested-list .links a,
+    .header .list li .nested-list .links a:hover,
+    .header .list li .nested-list .links a.active {
+        color: white !important;
+    }
 }
 
 @media (max-width: 1280px) {
     .header .list li a {
-        font-size: 16px !important;
+        font-size: 12px !important;
     }
 }
 
@@ -204,5 +241,11 @@
     .header .inner-header {
         padding: 5px 15px;
         height: 55px;
+    }
+}
+
+@media (max-width: 568px) {
+    .header {
+        width: 100%;
     }
 }

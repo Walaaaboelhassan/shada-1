@@ -23,48 +23,48 @@ function ArabicTopSection({ title, content }) {
           <h1 className="title">{title} </h1>
           <p>{content}</p>
         </div>
-        <div className="social-media-icon">
+        <div className="social-media-icon right-0 overflow-hidden">
           <motion.div
-            initial={{ left: "-138px" }}
-            whileHover={{ left: "0" }}
+            initial={{ right: "-137px" }}
+            whileHover={{ right: "0" }}
             transition={{ duration: 0.3 }}
-            className="facebook icon-cover gap-3 bg-[#3b5998]"
+            className="facebook icon-cover gap-3 bg-[#3b5998] !justify-end flex-row-reverse"
           >
-            <p>تابعنا على فيسبوك</p>
-            <a className="icon w-10 h-10">
+            <p> تابعنا على فيسبوك</p>
+            <a className="icon w-8 h-8">
               <RiFacebookCircleLine />
             </a>
           </motion.div>
           <motion.div
-            initial={{ left: "-138px" }}
-            whileHover={{ left: "0" }}
+            initial={{ right: "-137px" }}
+            whileHover={{ right: "0" }}
             transition={{ duration: 0.3 }}
-            className="instagram icon-cover gap-3 bg-[#125688]"
+            className="instagram icon-cover gap-3 bg-[#125688] !justify-end flex-row-reverse"
           >
-            <p> تابعنا على إنستغرام</p>
-            <a className="icon w-10 h-10">
+            <p>تابعنا على إنستغرام</p>
+            <a className="icon w-8 h-8">
               <RiInstagramLine />
             </a>
           </motion.div>
           <motion.div
-            initial={{ left: "-138px" }}
-            whileHover={{ left: "0" }}
+            initial={{ right: "-137px" }}
+            whileHover={{ right: "0" }}
             transition={{ duration: 0.3 }}
-            className="X icon-cover gap-3 bg-[#55acee]"
+            className="X icon-cover gap-3 bg-[#55acee] !justify-end flex-row-reverse"
           >
             <p> تابعنا على منصة</p>
-            <a className="icon w-10 h-10">
+            <a className="icon w-8 h-8">
               <RiTwitterXFill />
             </a>
           </motion.div>
           <motion.div
-            initial={{ left: "-138px" }}
-            whileHover={{ left: "0" }}
+            initial={{ right: "-137px" }}
+            whileHover={{ right: "0" }}
             transition={{ duration: 0.3 }}
-            className="linkedin icon-cover gap-3 bg-[blue]"
+            className="linkedin icon-cover gap-3 bg-[blue] !justify-end flex-row-reverse"
           >
-            <p> تابعنا على لينكدن</p>
-            <a className="icon w-10 h-10">
+            <p>تابعنا على لينكدن</p>
+            <a className="icon w-8 h-8">
               <RiLinkedinFill />
             </a>
           </motion.div>

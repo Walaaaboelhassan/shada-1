@@ -1,3 +1,8 @@
+.errorSection {
+    background: white;
+    margin-top: 100px;
+}
+
 .error {
     display: flex;
     flex-direction: column;
@@ -20,7 +25,7 @@
 }
 
 .error span strong {
-    background: url('../../../images/sad\ emoji.gif');
+    background: url('../../images/sad\ emoji.gif');
     background-size: cover;
     position: absolute;
     width: 150px;
@@ -53,7 +58,7 @@
 }
 
 .error .buttons a {
-    background-color: var(--second-main-color);
+    background-color: var(--main-color);
     text-decoration: none;
     color: white;
     padding: 13px 25px;
@@ -65,7 +70,7 @@
 
 .error .buttons a:hover {
     transition: .5s;
-    background-color: #4247c9;
+    opacity: .8;
 }
 
 @media (max-width: 700px) {

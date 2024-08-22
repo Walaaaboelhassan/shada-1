@@ -1,14 +1,11 @@
-import React, { Component } from "react";
-import TopSection from "../../TopSection/TopSection";
+import React from "react";
+import TopSection from "../TopSection/TopSection";
 import "./Error.css";
 import { Link } from "react-router-dom";
 
 function Error() {
   return (
     <div className="errorSection">
-      <div className="middle-section">
-        <TopSection sectionTitle="contact us" />
-      </div>
       <div className="error">
         <span>
           4 <strong></strong> 4

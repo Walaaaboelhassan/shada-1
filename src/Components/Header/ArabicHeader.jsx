@@ -4,13 +4,14 @@ import { IoReorderThreeOutline } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../../images/logo1.png";
-import DropDown from "../DropDown/DropDown";
-import { motion } from "framer-motion";
+import { HiChevronUp } from "react-icons/hi";
+import { HiChevronDown } from "react-icons/hi";
 
 function ArabicHeader() {
   const [showNavbar, setShowNavbar] = useState(false);
   const location = useLocation();
-  console.log(location.pathname.includes("about"));
+  const [hover, setHover] = useState(false);
+  const [active, setActive] = useState(false);
 
   return (
     <div className="fixed header">
@@ -19,24 +20,75 @@ function ArabicHeader() {
           <img className="w-10 h-10" src={logo} alt="logo" />
         </div>
         <ul className="list flex flex-row-reverse gap-6">
-          <li>
+          <li
+            onMouseEnter={() => setHover(true)}
+            onMouseLeave={() => setHover(false)}
+          >
             <Link
               to="#"
               className={`${
                 location.pathname.includes("about") ? "!text-[black]" : ""
               }`}
             >
-              {" "}
               عن الجمعية
+              {hover ? <HiChevronUp /> : <HiChevronDown />}
             </Link>
             <div className="nested-list">
               <div className="links !items-end">
-                <Link to="about/goals"> أهداف الجمعية</Link>
-                <Link to="about/activities"> أنشطة الجمعية</Link>
-                <Link to="about/add-members"> أعضاء المجلس الإدارة</Link>
-                <Link to="about/executive"> الفريق التنفيذي</Link>
-                <Link to="about/members"> أعضاء الجمعية</Link>
-                <Link to="about/administrative"> الهيكل الإداري للجمعية</Link>
+                <Link
+                  to="about/goals"
+                  className={`${
+                    location.pathname.includes("goals") ? "active" : ""
+                  }`}
+                >
+                  {" "}
+                  أهداف الجمعية
+                </Link>
+                <Link
+                  to="about/activities"
+                  className={`${
+                    location.pathname.includes("activities") ? "active" : ""
+                  }`}
+                >
+                  {" "}
+                  أنشطة الجمعية
+                </Link>
+                <Link
+                  to="about/add-members"
+                  className={`${
+                    location.pathname.includes("add-members") ? "active" : ""
+                  }`}
+                >
+                  {" "}
+                  أعضاء المجلس الإدارة
+                </Link>
+                <Link
+                  to="about/executive"
+                  className={`${
+                    location.pathname.includes("executive") ? "active" : ""
+                  }`}
+                >
+                  {" "}
+                  الفريق التنفيذي
+                </Link>
+                <Link
+                  to="about/members"
+                  className={`${
+                    location.pathname.includes("/members") ? "active" : ""
+                  }`}
+                >
+                  {" "}
+                  أعضاء الجمعية
+                </Link>
+                <Link
+                  to="about/administrative"
+                  className={`${
+                    location.pathname.includes("administrative") ? "active" : ""
+                  }`}
+                >
+                  {" "}
+                  الهيكل الإداري للجمعية
+                </Link>
               </div>
             </div>
           </li>
@@ -62,7 +114,10 @@ function ArabicHeader() {
               مشاريع الجمعية
             </Link>
           </li>
-          <li>
+          <li
+            onMouseEnter={() => setHover(true)}
+            onMouseLeave={() => setHover(false)}
+          >
             <Link
               to="#"
               className={`${
@@ -70,18 +125,51 @@ function ArabicHeader() {
               }`}
             >
               {" "}
-              الحوكمة و اإللتزام
+              الحوكمة و اإللتزام {hover ? <HiChevronUp /> : <HiChevronDown />}
             </Link>
             <div className="nested-list">
               <div className="links !items-end">
-                <Link to="commitment/parallel-list">الموازنة المالية </Link>
-                <Link to="commitment/financial-list"> القوائم المالية</Link>
-                <Link to="commitment/future-plan"> الخطة المستقبلية</Link>
-                <Link to="commitment/criteria">معيار الحوكمة و الإلتزام</Link>
+                <Link
+                  to="commitment/parallel-list"
+                  className={`${
+                    location.pathname.includes("parallel-list") ? "active" : ""
+                  }`}
+                >
+                  الموازنة المالية{" "}
+                </Link>
+                <Link
+                  to="commitment/financial-list"
+                  className={`${
+                    location.pathname.includes("financial-list") ? "active" : ""
+                  }`}
+                >
+                  {" "}
+                  القوائم المالية
+                </Link>
+                <Link
+                  to="commitment/future-plan"
+                  className={`${
+                    location.pathname.includes("future-plan") ? "active" : ""
+                  }`}
+                >
+                  {" "}
+                  الخطة المستقبلية
+                </Link>
+                <Link
+                  to="commitment/criteria"
+                  className={`${
+                    location.pathname.includes("criteria") ? "active" : ""
+                  }`}
+                >
+                  معيار الحوكمة و الإلتزام
+                </Link>
               </div>
             </div>
           </li>
-          <li>
+          <li
+            onMouseEnter={() => setHover(true)}
+            onMouseLeave={() => setHover(false)}
+          >
             <Link
               to="services"
               className={`${
@@ -89,17 +177,44 @@ function ArabicHeader() {
               }`}
             >
               {" "}
-              الخدمات اإللكترونية
+              الخدمات اإللكترونية {hover ? <HiChevronUp /> : <HiChevronDown />}
             </Link>
             <div className="nested-list">
               <div className="links !items-end">
-                <Link to="services/sponsors"> الرعاة</Link>
-                <Link to="services/memberships"> العضويات</Link>
-                <Link to="services/products"> المنتوجات</Link>
+                <Link
+                  to="services/sponsors"
+                  className={`${
+                    location.pathname.includes("sponsors") ? "active" : ""
+                  }`}
+                >
+                  {" "}
+                  الرعاة
+                </Link>
+                <Link
+                  to="services/memberships"
+                  className={`${
+                    location.pathname.includes("memberships") ? "active" : ""
+                  }`}
+                >
+                  {" "}
+                  العضويات
+                </Link>
+                <Link
+                  to="services/products"
+                  className={`${
+                    location.pathname.includes("products") ? "active" : ""
+                  }`}
+                >
+                  {" "}
+                  المنتوجات
+                </Link>
               </div>
             </div>
           </li>
-          <li>
+          <li
+            onMouseEnter={() => setHover(true)}
+            onMouseLeave={() => setHover(false)}
+          >
             <Link
               to="#"
               className={`${
@@ -107,18 +222,41 @@ function ArabicHeader() {
               }`}
             >
               {" "}
-              تواصل معنا​
+              تواصل معنا​ {hover ? <HiChevronUp /> : <HiChevronDown />}
             </Link>
             <div className="nested-list">
               <div className="links !items-end">
-                <Link to="contact/complains"> المقترحات و الشكاوى</Link>
-                <Link to="contact/hiring"> التوظيف</Link>
-                <Link to="contact/about"> التطوع</Link>
+                <Link
+                  to="contact/complains"
+                  className={`${
+                    location.pathname.includes("complains") ? "active" : ""
+                  }`}
+                >
+                  {" "}
+                  المقترحات و الشكاوى
+                </Link>
+                <Link
+                  to="contact/hiring"
+                  className={`${
+                    location.pathname.includes("hiring") ? "active" : ""
+                  }`}
+                >
+                  {" "}
+                  التوظيف
+                </Link>
+                <Link
+                  to="contact/volunteer"
+                  className={`${
+                    location.pathname.includes("volunteer") ? "active" : ""
+                  }`}
+                >
+                  {" "}
+                  التطوع
+                </Link>
               </div>
             </div>
           </li>
         </ul>
-        {/* <div className="donate w-10 h-10"></div> */}
         <div
           onClick={() => setShowNavbar(!showNavbar)}
           className="sidebar-icon w-10 h-10"
@@ -130,30 +268,261 @@ function ArabicHeader() {
       </div>
       <div
         className={`side-bar-header ${
-          showNavbar ? "!top-[55px]" : "!top-[-500px]"
+          showNavbar
+            ? "opacity-100 duration-1000 overflow-hidden"
+            : "opacity-0 h-0 duration-1000 overflow-hidden"
         }`}
       >
         <ul className="list flex flex-row-reverse gap-6">
-          <li>
-            <Link to="about"> عن الجمعية</Link>
+          <li
+            onMouseEnter={() => setHover(true)}
+            onMouseLeave={() => setHover(false)}
+            onClick={() => setActive(!active)}
+            className={`${active ? "active" : ""}`}
+          >
+            <Link
+              to="#"
+              className={`${
+                location.pathname.includes("about") ? "!text-[black]" : ""
+              }`}
+            >
+              عن الجمعية
+              {hover ? <HiChevronUp /> : <HiChevronDown />}
+            </Link>
+            <div className="nested-list">
+              <div className="links !items-end">
+                <Link
+                  to="about/goals"
+                  className={`${
+                    location.pathname.includes("goals") ? "active" : ""
+                  }`}
+                >
+                  {" "}
+                  أهداف الجمعية
+                </Link>
+                <Link
+                  to="about/activities"
+                  className={`${
+                    location.pathname.includes("activities") ? "active" : ""
+                  }`}
+                >
+                  {" "}
+                  أنشطة الجمعية
+                </Link>
+                <Link
+                  to="about/add-members"
+                  className={`${
+                    location.pathname.includes("add-members") ? "active" : ""
+                  }`}
+                >
+                  {" "}
+                  أعضاء المجلس الإدارة
+                </Link>
+                <Link
+                  to="about/executive"
+                  className={`${
+                    location.pathname.includes("executive") ? "active" : ""
+                  }`}
+                >
+                  {" "}
+                  الفريق التنفيذي
+                </Link>
+                <Link
+                  to="about/members"
+                  className={`${
+                    location.pathname.includes("/members") ? "active" : ""
+                  }`}
+                >
+                  {" "}
+                  أعضاء الجمعية
+                </Link>
+                <Link
+                  to="about/administrative"
+                  className={`${
+                    location.pathname.includes("administrative") ? "active" : ""
+                  }`}
+                >
+                  {" "}
+                  الهيكل الإداري للجمعية
+                </Link>
+              </div>
+            </div>
           </li>
-          <li>
-            <Link to="gallery"> وسائط الجمعية</Link>
+          <li
+            onClick={() => setActive(!active)}
+            className={`${active ? "active" : ""}`}
+          >
+            <Link
+              to="gallery"
+              className={`${
+                location.pathname.includes("gallery") ? "!text-[black]" : ""
+              }`}
+            >
+              {" "}
+              وسائط الجمعية
+            </Link>
           </li>
-          <li>
-            <Link to="projects"> مشاريع الجمعية</Link>
+          <li
+            onClick={() => setActive(!active)}
+            className={`${active ? "active" : ""}`}
+          >
+            <Link
+              to="#"
+              className={`${
+                location.pathname.includes("projects") ? "!text-[black]" : ""
+              }`}
+            >
+              {" "}
+              مشاريع الجمعية
+            </Link>
           </li>
-          <li>
-            <Link to="commitment"> الحوكمة و اإللتزام</Link>
+          <li
+            onClick={() => setActive(!active)}
+            className={`${active ? "active" : ""}`}
+            onMouseEnter={() => setHover(true)}
+            onMouseLeave={() => setHover(false)}
+          >
+            <Link
+              to="#"
+              className={`${
+                location.pathname.includes("commitment") ? "!text-[black]" : ""
+              }`}
+            >
+              {" "}
+              الحوكمة و اإللتزام {hover ? <HiChevronUp /> : <HiChevronDown />}
+            </Link>
+            <div className="nested-list">
+              <div className="links !items-end">
+                <Link
+                  to="commitment/parallel-list"
+                  className={`${
+                    location.pathname.includes("parallel-list") ? "active" : ""
+                  }`}
+                >
+                  الموازنة المالية{" "}
+                </Link>
+                <Link
+                  to="commitment/financial-list"
+                  className={`${
+                    location.pathname.includes("financial-list") ? "active" : ""
+                  }`}
+                >
+                  {" "}
+                  القوائم المالية
+                </Link>
+                <Link
+                  to="commitment/future-plan"
+                  className={`${
+                    location.pathname.includes("future-plan") ? "active" : ""
+                  }`}
+                >
+                  {" "}
+                  الخطة المستقبلية
+                </Link>
+                <Link
+                  to="commitment/criteria"
+                  className={`${
+                    location.pathname.includes("criteria") ? "active" : ""
+                  }`}
+                >
+                  معيار الحوكمة و الإلتزام
+                </Link>
+              </div>
+            </div>
           </li>
-          <li>
-            <Link to="services"> الخدمات اإللكترونية</Link>
+          <li
+            onClick={() => setActive(!active)}
+            className={`${active ? "active" : ""}`}
+            onMouseEnter={() => setHover(true)}
+            onMouseLeave={() => setHover(false)}
+          >
+            <Link
+              to="services"
+              className={`${
+                location.pathname.includes("services") ? "!text-[black]" : ""
+              }`}
+            >
+              {" "}
+              الخدمات اإللكترونية {hover ? <HiChevronUp /> : <HiChevronDown />}
+            </Link>
+            <div className="nested-list">
+              <div className="links !items-end">
+                <Link
+                  to="services/sponsors"
+                  className={`${
+                    location.pathname.includes("sponsors") ? "active" : ""
+                  }`}
+                >
+                  {" "}
+                  الرعاة
+                </Link>
+                <Link
+                  to="services/memberships"
+                  className={`${
+                    location.pathname.includes("memberships") ? "active" : ""
+                  }`}
+                >
+                  {" "}
+                  العضويات
+                </Link>
+                <Link
+                  to="services/products"
+                  className={`${
+                    location.pathname.includes("products") ? "active" : ""
+                  }`}
+                >
+                  {" "}
+                  المنتوجات
+                </Link>
+              </div>
+            </div>
           </li>
-          <li>
-            <Link to="sponsors"> الجهات الداعمه و الراعية</Link>
-          </li>
-          <li>
-            <Link to="join-us"> انضم لنا</Link>
+          <li
+            onClick={() => setActive(!active)}
+            className={`${active ? "active" : ""}`}
+            onMouseEnter={() => setHover(true)}
+            onMouseLeave={() => setHover(false)}
+          >
+            <Link
+              to="#"
+              className={`${
+                location.pathname.includes("contact") ? "!text-[black]" : ""
+              }`}
+            >
+              {" "}
+              تواصل معنا​ {hover ? <HiChevronUp /> : <HiChevronDown />}
+            </Link>
+            <div className="nested-list">
+              <div className="links !items-end">
+                <Link
+                  to="contact/complains"
+                  className={`${
+                    location.pathname.includes("complains") ? "active" : ""
+                  }`}
+                >
+                  {" "}
+                  المقترحات و الشكاوى
+                </Link>
+                <Link
+                  to="contact/hiring"
+                  className={`${
+                    location.pathname.includes("hiring") ? "active" : ""
+                  }`}
+                >
+                  {" "}
+                  التوظيف
+                </Link>
+                <Link
+                  to="contact/volunteer"
+                  className={`${
+                    location.pathname.includes("volunteer") ? "active" : ""
+                  }`}
+                >
+                  {" "}
+                  التطوع
+                </Link>
+              </div>
+            </div>
           </li>
         </ul>
       </div>
