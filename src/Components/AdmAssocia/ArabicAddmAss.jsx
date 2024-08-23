@@ -5,9 +5,10 @@ import member1 from "../../images/person1.jpg";
 import member2 from "../../images/person2.jpg";
 import member3 from "../../images/person3.jpg";
 import member4 from "../../images/person4.jpg";
+import member5 from "../../images/vecteezy_muslim-girl-in-black-hijab_36001923.jpg";
 import SmallTitle from "../SmallTitle/SmallTitle";
 
-function AddmAss() {
+function ArabicAddmAss() {
   return (
     <div className="addm-ass">
       <div className="members">
@@ -86,11 +87,11 @@ function AddmAss() {
             </div>
             <div className="member flex-row-reverse">
               <div className="image !w-[100%] !h-[200px] bg-">
-                {/* <img
-                  src={"عزة الزهراني"}
+                <img
+                  src={member5}
                   alt="member"
                   className="w-[70%] mx-auto h-full object-cover"
-                /> */}
+                />
               </div>
               <p>
                 {" "}
@@ -142,4 +143,4 @@ function AddmAss() {
   );
 }
 
-export default AddmAss;
+export default ArabicAddmAss;

@@ -3,7 +3,7 @@ import "./Future.css";
 import "../Sections/Commitment/Commitment.css";
 import SmallTitle from "../SmallTitle/SmallTitle";
 
-function Future() {
+function ArabicFuture() {
   return (
     <div className="future">
       <div className="members">
@@ -16,4 +16,4 @@ function Future() {
   );
 }
 
-export default Future;
+export default ArabicFuture;

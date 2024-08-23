@@ -1,7 +1,7 @@
 import React from "react";
 import SmallTitle from "../SmallTitle/SmallTitle";
 
-function ParallelList() {
+function ArabicParallelList() {
   return (
     <div className="parallel-list">
       <div className="members">
@@ -14,4 +14,4 @@ function ParallelList() {
   );
 }
 
-export default ParallelList;
+export default ArabicParallelList;

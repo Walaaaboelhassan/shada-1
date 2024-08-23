@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import "./Volunteer.css";
 import { LanguageContext } from "../../App";
 import ArabicVolunteer from "./ArabicVolunteer";
 import EnglishVolunteer from "./EnglishVolunteer";

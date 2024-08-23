@@ -13,7 +13,7 @@ function ArabicTopSection({ title, content }) {
     <div className="top-section overflow-hidden">
       <select
         onChange={(e) => setLanguage(e.target.value)}
-        className="language absolute p-2 outline-none z-[999999] bg-[#a04028] text-[white]"
+        className="language fixed p-2 outline-none z-[999999] bg-[#a04028] text-[white]"
       >
         <option value="arabic">Arabic</option>
         <option value="english">English</option>

@@ -2,7 +2,7 @@ import React from "react";
 import SmallTitle from "../SmallTitle/SmallTitle";
 import Icons from "../socialMedia/socialMediaLinks";
 
-function Complains() {
+function ArabicComplains() {
   return (
     <div className="contact-us">
       <div className="info">
@@ -58,4 +58,4 @@ function Complains() {
   );
 }
 
-export default Complains;
+export default ArabicComplains;

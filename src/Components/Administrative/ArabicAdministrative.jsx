@@ -3,9 +3,9 @@ import "./Administrative.css";
 import "../Sections/About/About.css";
 import SmallTitle from "../SmallTitle/SmallTitle";
 
-function Administrative() {
+function ArabicAdministrative() {
   return (
-    <div className="administrative">
+    <div className="Arabic">
       <div className="members">
         <SmallTitle title={"الهيكل الإداري للجمعية"} />
         <div className="not">
@@ -16,4 +16,4 @@ function Administrative() {
   );
 }
 
-export default Administrative;
+export default ArabicAdministrative;

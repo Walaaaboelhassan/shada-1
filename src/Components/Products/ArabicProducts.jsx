@@ -4,7 +4,7 @@ import "../Sections/Services/Services.css";
 import { MdOutlineProductionQuantityLimits } from "react-icons/md";
 import "./Products.css";
 
-function Products() {
+function ArabicProducts() {
   return (
     <div className="products">
       <SmallTitle title={"منتجات الجمعية​ ​"} />
@@ -64,4 +64,4 @@ function Products() {
   );
 }
 
-export default Products;
+export default ArabicProducts;

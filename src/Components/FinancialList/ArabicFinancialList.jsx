@@ -2,7 +2,7 @@ import React from "react";
 import SmallTitle from "../SmallTitle/SmallTitle";
 import "../Sections/Commitment/Commitment.css";
 
-function FinancialList() {
+function ArabicFinancialList() {
   return (
     <div className="financial-list">
       <div className="members">
@@ -15,4 +15,4 @@ function FinancialList() {
   );
 }
 
-export default FinancialList;
+export default ArabicFinancialList;

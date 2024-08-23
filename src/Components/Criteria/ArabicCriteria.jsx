@@ -1,7 +1,7 @@
 import React from "react";
 import SmallTitle from "../SmallTitle/SmallTitle";
 
-function Criteria() {
+function ArabicCriteria() {
   return (
     <div className="criteria">
       <div className="members">
@@ -14,4 +14,4 @@ function Criteria() {
   );
 }
 
-export default Criteria;
+export default ArabicCriteria;

@@ -14,7 +14,7 @@ function EnglishTopSection({ title, content }) {
     <div className="top-section overflow-hidden">
       <select
         onChange={(e) => setLanguage(e.target.value)}
-        className="language absolute right-0 p-2 outline-none z-[999999] bg-[#a04028] text-[white]"
+        className="language fixed right-0 p-2 outline-none z-[999999] bg-[#a04028] text-[white]"
       >
         <option value="english">English</option>
         <option value="arabic">Arabic</option>
@@ -26,7 +26,7 @@ function EnglishTopSection({ title, content }) {
         </div>
         <div className="social-media-icon">
           <motion.div
-            initial={{ left: "-138px" }}
+            initial={{ left: "-187px" }}
             whileHover={{ left: "0" }}
             transition={{ duration: 0.3 }}
             className="facebook icon-cover gap-3 bg-[#3b5998]"
@@ -37,7 +37,7 @@ function EnglishTopSection({ title, content }) {
             </a>
           </motion.div>
           <motion.div
-            initial={{ left: "-138px" }}
+            initial={{ left: "-187px" }}
             whileHover={{ left: "0" }}
             transition={{ duration: 0.3 }}
             className="instagram icon-cover gap-3 bg-[#125688]"
@@ -48,7 +48,7 @@ function EnglishTopSection({ title, content }) {
             </a>
           </motion.div>
           <motion.div
-            initial={{ left: "-138px" }}
+            initial={{ left: "-187px" }}
             whileHover={{ left: "0" }}
             transition={{ duration: 0.3 }}
             className="X icon-cover gap-3 bg-[#55acee]"
@@ -59,7 +59,7 @@ function EnglishTopSection({ title, content }) {
             </a>
           </motion.div>
           <motion.div
-            initial={{ left: "-138px" }}
+            initial={{ left: "-187px" }}
             whileHover={{ left: "0" }}
             transition={{ duration: 0.3 }}
             className="linkedin icon-cover gap-3 bg-[blue]"

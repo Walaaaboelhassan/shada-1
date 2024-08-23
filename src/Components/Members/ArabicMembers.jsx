@@ -3,7 +3,7 @@ import "./Members.css";
 import "../Sections/About/About.css";
 import SmallTitle from "../SmallTitle/SmallTitle";
 
-function Members() {
+function ArabicMembers() {
   return (
     <div className="members-ass">
       <div className="members">
@@ -16,4 +16,4 @@ function Members() {
   );
 }
 
-export default Members;
+export default ArabicMembers;

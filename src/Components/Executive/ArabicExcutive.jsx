@@ -3,7 +3,7 @@ import "./Executive.css";
 import "../Sections/About/About.css";
 import SmallTitle from "../SmallTitle/SmallTitle";
 
-function Executive() {
+function ArabicExecutive() {
   return (
     <div className="executive">
       <div className="members">
@@ -16,4 +16,4 @@ function Executive() {
   );
 }
 
-export default Executive;
+export default ArabicExecutive;

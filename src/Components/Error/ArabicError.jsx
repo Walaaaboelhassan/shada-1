@@ -3,7 +3,7 @@ import TopSection from "../TopSection/TopSection";
 import "./Error.css";
 import { Link, useNavigate } from "react-router-dom";
 
-function Error() {
+function ArabicError() {
   const navigate = useNavigate();
   return (
     <div className="errorSection">
@@ -24,4 +24,4 @@ function Error() {
   );
 }
 
-export default Error;
+export default ArabicError;
