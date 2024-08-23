@@ -26,11 +26,11 @@
 }
 
 .all-sponsors-box .sponsors-box::after {
-    right: -20px;
+    right: -30px;
 }
 
 .all-sponsors-box .sponsors-box::before {
-    left: -20px;
+    left: -30px;
 }
 
 .all-sponsors-box .sponsors-box .icon {

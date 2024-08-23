@@ -4,6 +4,7 @@ import member1 from "../../images/person1.jpg";
 import member2 from "../../images/person2.jpg";
 import member3 from "../../images/person3.jpg";
 import member4 from "../../images/person4.jpg";
+import member5 from "../../images/vecteezy_muslim-girl-in-black-hijab_36001923.jpg";
 
 function EnglishAddmAss() {
   return (
@@ -14,12 +15,12 @@ function EnglishAddmAss() {
         "
       >
         <div className="all-members">
-          <div className="member !flex-row-reverse">
-            <div className="image !w-[65px] !h-full">
+          <div className="member">
+            <div className="image !w-[100%] !h-[200px]">
               <img
                 src={member4}
                 alt="member"
-                className="w-full h-full object-cover"
+                className="w-[70%] mx-auto h-full object-cover"
               />
             </div>
             <p>
@@ -41,12 +42,12 @@ function EnglishAddmAss() {
               </span>
             </p>
           </div>
-          <div className="member !flex-row-reverse">
-            <div className="image  !w-[65px] !h-full">
+          <div className="member">
+            <div className="image  !w-[100%] !h-[200px]">
               <img
                 src={member3}
                 alt="member"
-                className="w-full h-full object-cover"
+                className="w-[70%] mx-auto h-full object-cover"
               />
             </div>
             <p>
@@ -70,12 +71,12 @@ function EnglishAddmAss() {
               </span>
             </p>
           </div>{" "}
-          <div className="member !flex-row-reverse">
-            <div className="image  !w-[65px] !h-full">
+          <div className="member">
+            <div className="image  !w-[100%] !h-[200px]">
               <img
                 src={member2}
                 alt="member"
-                className="w-full h-full object-cover"
+                className="w-[70%] mx-auto h-full object-cover"
               />
             </div>
             <p>
@@ -105,13 +106,13 @@ function EnglishAddmAss() {
               </span>
             </p>
           </div>{" "}
-          <div className="member !flex-row-reverse">
-            <div className="image  !w-[65px] !h-full bg-">
-              {/* <img
-                  src={"عزة الزهراني"}
-                  alt="member"
-                  className="w-full h-full object-cover"
-                /> */}
+          <div className="member">
+            <div className="image  !w-[100%] !h-[200px] bg-">
+              <img
+                src={member5}
+                alt="member"
+                className="w-[70%] mx-auto h-full object-cover"
+              />
             </div>
             <p>
               {" "}
@@ -136,12 +137,12 @@ function EnglishAddmAss() {
               </span>
             </p>
           </div>
-          <div className="member !flex-row-reverse">
-            <div className="image  !w-[65px] !h-full">
+          <div className="member">
+            <div className="image  !w-[100%] !h-[200px]">
               <img
                 src={member1}
                 alt="member"
-                className="w-full h-full object-cover"
+                className="w-[70%] mx-auto h-full object-cover"
               />
             </div>
             <p>
@@ -168,9 +169,6 @@ function EnglishAddmAss() {
               </span>
             </p>
           </div>
-        </div>
-        <div className="image mt-[61px]">
-          <img src={member4} alt="" />
         </div>
       </div>
     </div>

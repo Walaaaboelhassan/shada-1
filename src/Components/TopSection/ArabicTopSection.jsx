@@ -8,16 +8,10 @@ import { motion } from "framer-motion";
 import { setLanguageContext } from "../../App";
 
 function ArabicTopSection({ title, content }) {
-  const setLanguage = useContext(setLanguageContext);
+
   return (
     <div className="top-section overflow-hidden">
-      <select
-        onChange={(e) => setLanguage(e.target.value)}
-        className="language fixed p-2 outline-none z-[999999] bg-[#a04028] text-[white]"
-      >
-        <option value="arabic">Arabic</option>
-        <option value="english">English</option>
-      </select>
+     
       <div className="above ">
         <div className="info">
           <h1 className="title">{title} </h1>

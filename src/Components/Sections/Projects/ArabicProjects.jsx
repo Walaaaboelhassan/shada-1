@@ -49,17 +49,16 @@ function ArabicProjects({ showPopup, setShowPopup }) {
             </motion.div>
           </div>
         )}
-        <div className="project relative">
+        <div className="project relative" onClick={() => setShowPopup(true)}>
           <motion.h3
             initial={{ scale: 0, bottom: "0", translateX: "-50%" }}
-            whileInView={{ scale: 1, bottom: "25px", translateX: "-50%" }}
+            whileInView={{ scale: 1, bottom: "17px", translateX: "-50%" }}
             transition={{ duration: 0.2 }}
             className="project-name"
-            onClick={() => setShowPopup(true)}
           >
             أعداد نادي للهايكنق داخل الأندية الرياضية
           </motion.h3>
-          <div className="image">
+          <div className="image" onClick={() => setShowPopup(true)}>
             <img src={img1} alt="" />
           </div>
           <p onClick={() => setShowPopup(true)} className="description">

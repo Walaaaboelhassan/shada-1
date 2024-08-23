@@ -8,8 +8,8 @@ function EnglishJoin() {
         <img src={mount} alt="mount" />
       </div>
       <div className="cover border-[12px] absolute"></div>
-      <div className="info">
-        <div className="title">
+      <div className="info !text-start">
+        <div className="title !text-left">
           <h1>Join us</h1>
         </div>
         <div className="paragraph">

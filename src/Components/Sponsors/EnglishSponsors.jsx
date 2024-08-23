@@ -17,7 +17,7 @@ function EnglishSponsors() {
             <img className="w-[92px]" src={normal} alt="normal" />
           </div>
           <div className="title">
-            <h1> Regular sponsorship</h1>
+            <h1 className="!text-[26px]"> Regular sponsorship</h1>
           </div>
           <div className="description">
             {/* <p> Lorem ipsum dolor sit amet consectetur adipisicing elit Eos deleniti recusandae dicta, aspernatur consequatur eum </p> */}
@@ -28,7 +28,7 @@ function EnglishSponsors() {
             <img className="w-[92px]" src={bronzy} alt="bronzy" />
           </div>
           <div className="title">
-            <h1> Bronze sponsorship</h1>
+            <h1 className="!text-[26px]"> Bronze sponsorship</h1>
           </div>
           <div className="description">
             {/* <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. This is due to the decision, as per the following criteria.
@@ -40,7 +40,7 @@ function EnglishSponsors() {
             <img className="w-[92px]" src={FD} alt="bronzy" />
           </div>
           <div className="title">
-            <h1>Silver sponsorship</h1>
+            <h1 className="!text-[26px]">Silver sponsorship</h1>
           </div>
           <div className="description">
             {/* < p> Lorem ipsum dolor sit amet consectetur adipisicing elit. This is due to the decision, as per the following criteria.
@@ -52,7 +52,7 @@ function EnglishSponsors() {
             <img className="w-[92px]" src={gold} alt="bronzy" />
           </div>
           <div className="title">
-            <h1>Golden sponsorship</h1>
+            <h1 className="!text-[26px]">Golden sponsorship</h1>
           </div>
           <div className="description">
             {/* <p > Lorem ipsum dolor sit amet consectetur adipisicing elit. This is due to the decision, as per the following criteria.
@@ -64,7 +64,7 @@ function EnglishSponsors() {
             <img className="w-[92px]" src={platinium} alt="bronzy" />
           </div>
           <div className="title">
-            <h1>Platinum Care ​</h1>
+            <h1 className="!text-[26px]">Platinum sponsorship ​</h1>
           </div>
           <div className="description">
             {/* < p> Lorem ipsum dolor sit amet consectetur adipisicing elit. This is due to the decision, as per the following criteria.

@@ -6,20 +6,28 @@ import { Link, useLocation } from "react-router-dom";
 import logo from "../../images/logo1.png";
 import { HiChevronUp } from "react-icons/hi";
 import { HiChevronDown } from "react-icons/hi";
+import { setLanguageContext } from "../../App";
 
 function ArabicHeader() {
   const [showNavbar, setShowNavbar] = useState(false);
   const location = useLocation();
   const [hover, setHover] = useState(false);
   const [active, setActive] = useState(false);
-
+  const setLanguage = useContext(setLanguageContext);
   return (
     <div className="fixed header">
+      <select
+        onChange={(e) => setLanguage(e.target.value)}
+        className="language fixed p-2 top-[52px] left-[50px]  outline-none z-[999999] bg-[transparent] text-[black]"
+      >
+        <option value="arabic">Arabic</option>
+        <option value="english">English</option>
+      </select>
       <div className="inner-header flex items-center justify-center flex-row-reverse">
         <div className="logo">
           <img className="w-10 h-10" src={logo} alt="logo" />
         </div>
-        <ul className="list flex flex-row-reverse gap-6">
+        <ul className="list flex flex-row-reverse gap-2">
           <li
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}

@@ -16,6 +16,7 @@
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 40px;
     margin: 0 35px;
+    width: 100%;
 }
 
 .about .members .all-members .member {
