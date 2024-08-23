@@ -14,18 +14,13 @@ function EnglishComplains() {
             type="text"
             id="username"
             placeholder="Username"
-            className="text-end"
+            className=""
           />
-          <input
-            type="email"
-            id="email"
-            placeholder="Email"
-            className="text-end"
-          />
+          <input type="email" id="email" placeholder="Email" className="" />
           <textarea
             name="message"
             placeholder="Suggestion or Complain"
-            className="text-end"
+            className=""
           ></textarea>
           <input type="submit" value="Send" />
         </form>
@@ -36,7 +31,7 @@ function EnglishComplains() {
           </div>
           <div className="contact-me">
             <h4>Location</h4>
-            <address>المملكة العربية السعودية – الباحة</address>
+            <address>Kingdom of Saudi Arabia - Al Baha</address>
           </div>
           <div className="contact-me">
             <h4>Phone && Email</h4>
