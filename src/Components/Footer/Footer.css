@@ -27,7 +27,7 @@
 
 .footer .footer-top {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 275px));
     gap: 20px;
 }
 
@@ -45,6 +45,7 @@
     margin: 10px 0;
     line-height: 2;
     color: #5d5d5e;
+    font-size: 13px;
 }
 
 
@@ -107,7 +108,7 @@
     transition: .3s;
     width: max-content;
     color: #5d5d5e;
-    font-size: 15px;
+    font-size: 13px;
     text-transform: capitalize;
     font-weight: 600;
     text-decoration: none;

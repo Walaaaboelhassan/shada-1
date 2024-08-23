@@ -150,6 +150,12 @@
 }
 
 @media (max-width: 1120px) {
+    select {
+        width: max-content;
+        left: 50%;
+        color: white;
+    }
+
     .header {
         border-radius: 0;
     }

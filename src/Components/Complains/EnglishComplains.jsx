@@ -4,11 +4,11 @@ import Icons from "../socialMedia/socialMediaLinks";
 
 function EnglishComplains() {
   return (
-    <div className="contact-us">
+    <div className="contact-us !flex-row-reverse">
       <div className="info">
-        <SmallTitle title="الشكاوى والمقترحات" />
+        <SmallTitle title="Suggestions and Complains" />
       </div>
-      <div className="contact-form-info">
+      <div className="contact-form-info !text-start">
         <form className="form">
           <input
             type="text"
@@ -24,9 +24,9 @@ function EnglishComplains() {
           ></textarea>
           <input type="submit" value="Send" />
         </form>
-        <div className="contact-side-info">
+        <div className="contact-side-info !text-start">
           <div className="back"></div>
-          <div className="title">
+          <div className="title !items-start">
             <h1>Contact us for any information</h1>
           </div>
           <div className="contact-me">
@@ -35,7 +35,7 @@ function EnglishComplains() {
           </div>
           <div className="contact-me">
             <h4>Phone && Email</h4>
-            <address className="text-center">
+            <address className="text-center lowercase">
               SHADAMOUNTAINSPORTS@GMAIL.COM <br />
               <strong className="">&&</strong>
               <br /> 0551471042

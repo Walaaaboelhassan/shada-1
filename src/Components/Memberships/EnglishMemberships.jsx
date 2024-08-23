@@ -69,7 +69,7 @@ function EnglishMembership() {
         </div>
       </div>
       <SmallTitle title={"Association Memberships"} />
-      <div className="memberships flex items-center justify-center flex-wrap gap-8">
+      <div className="memberships flex items-center justify-center flex-wrap gap-8 gap-y-[170px]">
         <div className="box shadow-2xl relative ">
           <div className="name bg-[#4645D8] ">
             <h3 className="after:border-t-[#4645D8]">Regular membership ​</h3>

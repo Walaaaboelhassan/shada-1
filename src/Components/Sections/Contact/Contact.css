@@ -272,6 +272,12 @@
     color: white;
 }
 
+@media(max-width: 1040px) {
+    .contact-form-info {
+        width: 100%;
+    }
+}
+
 @media(max-width: 768px) {
     .join-us {
         flex-direction: column-reverse;
