@@ -7,9 +7,7 @@ import platinium from "../../images/بلاتينيوم.png";
 import bronzy from "../..//images/برونزي.png";
 import normal from "../../images/logo.png";
 
-import { motion } from "framer-motion";
-
-function Sponsors() {
+function ArabicSponsors() {
   return (
     <div className="sponsors">
       <SmallTitle title={"الرعاة ​"} />
@@ -85,9 +83,8 @@ function Sponsors() {
           </div>
         </div>
       </div>
-
     </div>
   );
 }
 
-export default Sponsors;
+export default ArabicSponsors;

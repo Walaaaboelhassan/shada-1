@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { useContext } from "react";
+import { LanguageContext } from "../../App";
+import ArabicVolunteer from "./ArabicVolunteer";
+import EnglishVolunteer from "./EnglishVolunteer";
 
 function Volunteer() {
+  const language = useContext(LanguageContext);
   return (
     <div>
-      
+      {language === "arabic" ? <ArabicVolunteer /> : <EnglishVolunteer />}
     </div>
-  )
+  );
 }
 
-export default Volunteer
+export default Volunteer;

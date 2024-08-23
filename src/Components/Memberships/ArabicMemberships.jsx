@@ -2,7 +2,7 @@ import React from "react";
 import SmallTitle from "../SmallTitle/SmallTitle";
 import logo from "../../images/logo.png";
 
-function Memberships() {
+function ArabicMemberships() {
   return (
     <div className="memberships">
       <SmallTitle title={"عضويات الجمعية"} />
@@ -135,4 +135,4 @@ function Memberships() {
   );
 }
 
-export default Memberships;
+export default ArabicMemberships;
