@@ -1,17 +1,17 @@
-import React from "react";
-import "./Administrative.css";
-import "../Sections/About/About.css";
-import SmallTitle from "../SmallTitle/SmallTitle";
+import React, { useContext } from "react";
+import { LanguageContext } from "../../App";
+import ArabicAdministrative from "./ArabicAdministrative";
+import EnglishAdministrative from "./EnglishAdministrative";
 
 function Administrative() {
+  const language = useContext(LanguageContext);
   return (
-    <div className="administrative">
-      <div className="members">
-        <SmallTitle title={"الهيكل الإداري للجمعية"} />
-        <div className="not">
-          <p>قيد التطوير</p>
-        </div>
-      </div>
+    <div>
+      {language === "arabic" ? (
+        <ArabicAdministrative />
+      ) : (
+        <EnglishAdministrative />
+      )}
     </div>
   );
 }

@@ -1,18 +1,19 @@
-import React from "react";
-import SmallTitle from "../SmallTitle/SmallTitle";
-import "../Sections/Commitment/Commitment.css";
+import React, { useContext } from 'react'
+import { LanguageContext } from '../../App';
+import ArabicFinancialList from "./ArabicFinancialList";
+import EnglishFinancialList from "./EnglishFinancialList";
 
 function FinancialList() {
-  return (
-    <div className="financial-list">
-      <div className="members">
-        <SmallTitle title={"القوائم المالية"} />
-        <div className="not">
-          <p>قيد التطوير</p>
-        </div>
-      </div>
-    </div>
-  );
+ const language = useContext(LanguageContext);
+ return (
+   <div>
+     {language === "arabic" ? (
+       <ArabicFinancialList />
+     ) : (
+       <EnglishFinancialList />
+     )}
+   </div>
+ );
 }
 
-export default FinancialList;
+export default FinancialList

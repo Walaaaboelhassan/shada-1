@@ -1,18 +1,12 @@
-import React from "react";
-import "./Members.css";
-import "../Sections/About/About.css";
-import SmallTitle from "../SmallTitle/SmallTitle";
+import React, { useContext } from "react";
+import { LanguageContext } from "../../App";
+import ArabicMembers from "./ArabicMembers";
+import EnglishMembers from "./EnglishMembers";
 
 function Members() {
+  const language = useContext(LanguageContext);
   return (
-    <div className="members-ass">
-      <div className="members">
-        <SmallTitle title={"أعضاء الجمعية"} />
-        <div className="not">
-          <p>قيد التطوير</p>
-        </div>
-      </div>
-    </div>
+    <div>{language === "arabic" ? <ArabicMembers /> : <EnglishMembers />}</div>
   );
 }
 

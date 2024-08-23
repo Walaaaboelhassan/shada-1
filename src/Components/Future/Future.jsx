@@ -1,18 +1,12 @@
-import React from "react";
-import "./Future.css";
-import "../Sections/Commitment/Commitment.css";
-import SmallTitle from "../SmallTitle/SmallTitle";
+import React, { useContext } from "react";
+import { LanguageContext } from "../../App";
+import ArabicFuture from "./ArabicFuture";
+import EnglishFuture from "./EnglishFuture";
 
 function Future() {
+  const language = useContext(LanguageContext);
   return (
-    <div className="future">
-      <div className="members">
-        <SmallTitle title={"الخطة المستقبلية"} />
-        <div className="not">
-          <p>قيد التطوير</p>
-        </div>
-      </div>
-    </div>
+    <div>{language === "arabic" ? <ArabicFuture /> : <EnglishFuture />}</div>
   );
 }
 

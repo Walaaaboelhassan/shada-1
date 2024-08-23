@@ -1,17 +1,16 @@
-import React from "react";
-import SmallTitle from "../SmallTitle/SmallTitle";
+import React, { useContext } from 'react'
+import { LanguageContext } from '../../App';
+import ArabicParallelList from "./ArabicParallelList";
+import EnglishParallelList from "./EnglishParallelList";
+
 
 function ParallelList() {
-  return (
-    <div className="parallel-list">
-      <div className="members">
-        <SmallTitle title={"الموازنة المالية"} />
-        <div className="not">
-          <p>قيد التطوير</p>
-        </div>
-      </div>
-    </div>
-  );
+ const language = useContext(LanguageContext);
+ return (
+   <div>
+     {language === "arabic" ? <ArabicParallelList /> : <EnglishParallelList />}
+   </div>
+ );
 }
 
-export default ParallelList;
+export default ParallelList

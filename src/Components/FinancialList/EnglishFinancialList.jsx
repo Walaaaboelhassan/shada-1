@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Volunteer() {
+function EnglishFinancialList() {
   return (
     <div>
       
@@ -8,4 +8,4 @@ function Volunteer() {
   )
 }
 
-export default Volunteer
+export default EnglishFinancialList

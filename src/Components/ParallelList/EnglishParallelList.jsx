@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Volunteer() {
+function EnglishParallelList() {
   return (
     <div>
       
@@ -8,4 +8,4 @@ function Volunteer() {
   )
 }
 
-export default Volunteer
+export default EnglishParallelList

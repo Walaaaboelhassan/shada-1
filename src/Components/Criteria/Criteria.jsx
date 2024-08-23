@@ -1,15 +1,13 @@
-import React from "react";
-import SmallTitle from "../SmallTitle/SmallTitle";
+import React, { useContext } from "react";
+import { LanguageContext } from "../../App";
+import ArabicCriteria from "./ArabicCriteria";
+import EnglishCriteria from "./EnglishCriteria";
 
 function Criteria() {
+  const language = useContext(LanguageContext);
   return (
-    <div className="criteria">
-      <div className="members">
-        <SmallTitle title={"معيار الحوكمة و الإلتزام"} />
-        <div className="not">
-          <p>قيد التطوير</p>
-        </div>
-      </div>
+    <div>
+      {language === "arabic" ? <ArabicCriteria /> : <EnglishCriteria />}
     </div>
   );
 }
